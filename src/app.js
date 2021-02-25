@@ -5,13 +5,13 @@ const bodyParser = require('body-parser')
 const connection = require('./database')
 
 app.get('/', (req, res) => {
-    res.send('Peepeepoopoo')
+    res.status(200).send('Peepeepoopoo').end()
 })
 
 app.get('/books', (req, res) => {
     connection.query('SELECT * FROM books', (err, result) => {
         if(err) throw err
-        res.json(result)
+        res.status(200).send(result).end()
     })
 })
 
