@@ -1,5 +1,5 @@
 runtime: nodejs14
 
 handlers:
-  -url: /.*
+- url: /.*
   static_dir: src
