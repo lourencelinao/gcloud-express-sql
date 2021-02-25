@@ -1,1 +1,5 @@
 runtime: nodejs14
+
+handlers:
+  -url: /.*
+  static_dir: src
