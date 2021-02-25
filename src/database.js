@@ -19,7 +19,7 @@ connection.connect((err) => {
     console.log(err.message);
     throw err
   } else {
-    console.log("Database mounted");
+    console.log("Database mounted, poopoo");
   }
 });
 
