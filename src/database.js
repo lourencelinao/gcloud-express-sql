@@ -7,7 +7,8 @@ let config = {
 }
 
 if (process.env.NODE_ENV === "production") {
-    config.host = `cloudsql/${process.env.INSTANCE_CONNECTION_NAME}`
+    config.host = 'testproject-305920:asia-southeast1:gcloud-sql-express'
+    // config.host = `cloudsql/${process.env.INSTANCE_CONNECTION_NAME}`
 }else{
     config.host = process.env.DB_HOST
 }
