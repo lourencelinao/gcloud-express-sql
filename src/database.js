@@ -7,7 +7,7 @@ let config = {
 }
 
 if (process.env.NODE_ENV === "production") {
-    config.socketPath = `cloudsql/${process.env.INSTANCE_CONNECTION_NAME}`
+    config.host = `cloudsql/${process.env.INSTANCE_CONNECTION_NAME}`
 }else{
     config.host = process.env.DB_HOST
 }
