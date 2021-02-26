@@ -16,7 +16,7 @@ const connection = mysql.createConnection(config);
 
 connection.connect((err) => {
   if (err) {
-    console.log(err.message, 'error poopoo');
+    console.log(err.message, 'error poopoo', process.env.INSTANCE_CONNECTION_NAME);
     throw err
   } else {
     console.log("Database mounted, poopoo");
